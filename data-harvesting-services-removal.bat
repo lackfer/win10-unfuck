@@ -13,7 +13,7 @@ net stop Wecsvc
 sc delete dmwappushservice
 sc delete diagtrack
 sc delete Wecsvc
-cd c:\ProgramData\Microsoft\Diagnosis\ETLLogs\Autologger
+cd %SYSTEMDRIVE%\ProgramData\Microsoft\Diagnosis\ETLLogs\Autologger
 cacls Autologger-Diagtrack-Listener.etl /d SYSTEM
 
 pause
